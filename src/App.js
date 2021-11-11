@@ -1,5 +1,6 @@
 import './App.css';
 
+
 function handleSubmit(e) {
   e.preventDefault();
   console.log("I got clicked!")
@@ -10,8 +11,9 @@ function handleSubmit(e) {
 function App() {
     return ( 
     <div>
-        <h1> My Wishlist </h1> 
-        <button>Close</button>
+        <header>
+          <h1> My Wishlist </h1> <button>Close</button>
+        </header>
         <form>
           <div>
             <label>Name of Gift:

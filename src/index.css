@@ -8,3 +8,22 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+header {
+    width: 500px;
+    border: 1px dotted black;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h1 {
+    display: inline;
+    margin: 0;
+    color: pink;
+}
+
+button {
+    display: inline;
+    padding-left: 20px;
+    margin-left: 60px;
+}
