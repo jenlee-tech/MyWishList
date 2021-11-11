@@ -1,5 +1,12 @@
 import './App.css';
 
+function handleSubmit(e) {
+  e.preventDefault();
+  console.log("I got clicked!")
+}
+
+
+
 function App() {
     return ( 
     <div>
@@ -25,7 +32,7 @@ function App() {
             </label>
           </div>
           
-          <input type="submit" value="Add" />
+          <input type="submit" value="Add" onClick = {handleSubmit} />
         </form>
 
 
