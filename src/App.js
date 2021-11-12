@@ -1,5 +1,5 @@
 import './App.css';
-
+import data from "./data.js";
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -36,6 +36,12 @@ function App() {
           
           <input type="submit" value="Add" onClick = {handleSubmit} />
         </form>
+
+        <ul>
+          {data.map((item) => (
+          <li key = {item.id}>{item.name}</li>
+          ))}
+        </ul>
 
 
     </div>
