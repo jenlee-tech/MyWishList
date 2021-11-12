@@ -3,16 +3,19 @@ import data from "./data.js";
 
 function handleSubmit(e) {
   e.preventDefault();
-  console.log("I got clicked!  What happen?")
+  console.log("The submit button got clicked!  What happen?")
 }
 
+function handleClose(e) {
+    console.log("I clicked the close button")
+}
 
 
 function App() {
     return ( 
     <div>
         <h1> My Wishlist </h1> 
-        <button>Close</button>
+        <button onClick = {handleClose}>Close</button>
         <form>
           <div>
             <label>Name of Gift:
