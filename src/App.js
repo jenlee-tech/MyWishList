@@ -11,9 +11,8 @@ function handleSubmit(e) {
 function App() {
     return ( 
     <div>
-        <header>
-          <h1> My Wishlist </h1> <button>Close</button>
-        </header>
+        <h1> My Wishlist </h1> 
+        <button>Close</button>
         <form>
           <div>
             <label>Name of Gift:
