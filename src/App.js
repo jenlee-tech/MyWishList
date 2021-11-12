@@ -1,4 +1,5 @@
 import './App.css';
+import data from './data.js';
 
 
 function handleSubmit(e) {
@@ -38,38 +39,12 @@ function App() {
           
           <input type="submit" value="Add" onClick = {handleSubmit} />
         </form>
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-||||||| 65e9338... created data
         <ul>
           {data.map((item) => (
           <li key = {item.id}>{item.name}</li>
           ))}
         </ul>
 
-=======
->>>>>>> parent of 65e9338... created data
-||||||| 65e9338... created data
-        <ul>
-          {data.map((item) => (
-          <li key = {item.id}>{item.name}</li>
-          ))}
-        </ul>
-
-=======
->>>>>>> parent of 65e9338... created data
-||||||| 65e9338... created data
-        <ul>
-          {data.map((item) => (
-          <li key = {item.id}>{item.name}</li>
-          ))}
-        </ul>
-
-=======
->>>>>>> parent of 65e9338... created data
 
     </div>
     );
