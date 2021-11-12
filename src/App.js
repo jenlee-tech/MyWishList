@@ -41,7 +41,17 @@ function App() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+||||||| 65e9338... created data
+        <ul>
+          {data.map((item) => (
+          <li key = {item.id}>{item.name}</li>
+          ))}
+        </ul>
+
+=======
+>>>>>>> parent of 65e9338... created data
 ||||||| 65e9338... created data
         <ul>
           {data.map((item) => (
