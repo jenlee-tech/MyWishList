@@ -1,5 +1,8 @@
 import './App.css';
 import data from './data.js';
+import React, { useState } from 'react';
+
+
 
 
 function handleSubmit(e) {
@@ -13,6 +16,7 @@ function handleClose(e) {
 
 
 function App() {
+    const [datainfo, setData] = useState(data);
     return ( 
     <div>
         <h1> My Wishlist </h1> 
