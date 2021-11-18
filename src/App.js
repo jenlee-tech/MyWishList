@@ -16,35 +16,41 @@ function handleClose(e) {
 
 
 function App() {
-    const [datainfo, setData] = useState(data);
-    return ( 
+  const [datainfo, setData] = useState(data);
+  console.log("this is datainfo:", datainfo); 
+  //console.log({datainfo})  
+    
+
+  return ( 
     <div>
         <h1> My Wishlist </h1> 
         <button onClick = {handleClose}>Close</button>
         <form>
           <div>
-            <label>Name of Gift:
-              <input type="text" name="name"/>
-            </label> 
+            <label>Name of Gift:   </label> 
+              <input type="text" name="name" placeholder="Name of Gift" />
+         
           </div>
 
           <div>
-            <label>Description:
-              <input type="text" name="description"/>
-            </label>
+            <label>Description:</label>
+              <input type="text" name="description" placeholder="description" />
+            
           </div>
 
 
           <div>
-            <label>Link:
-              <input type="url" name="link"/>
-            </label>
+            <label>Link:</label>
+              <input type="url" name="link" placeholder= "Link" />
+            
           </div>
           
-          <input type="submit" value="Add" onClick = {handleSubmit} />
+          <input type="submit" value="Add Gift" onClick = {handleSubmit} />
         </form>
+
+
         <ul>
-          {data.map((item) => (
+          {datainfo.map((item) => (
           <li key = {item.id}>{item.name}</li>
           ))}
         </ul>
