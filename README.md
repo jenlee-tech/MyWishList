@@ -7,8 +7,12 @@ This project was created for the following reasons:
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install` - (make sure you got all those dependencies!)
+
+and then run:
 
 ### `npm start`
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
