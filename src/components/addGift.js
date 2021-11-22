@@ -1,4 +1,12 @@
-const addGift = () => {
+import React, { useState } from 'react';
+
+function handleSubmit(e) {
+    e.preventDefault();
+    console.log("The submit button got clicked!  What happen?")
+  }
+
+
+const AddGift = () => {
 
 return (
         <form>
@@ -26,4 +34,4 @@ return (
     )
 }
 
-export default addGift;
+export default AddGift;
