@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function handleSubmit(e) {
     e.preventDefault();
-    //console.log("The submit button got clicked!  What happen?")
+    console.log("The submit button got clicked!  What happen?")
 
 
   }
