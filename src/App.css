@@ -7,14 +7,23 @@ header {
 
 h1 {
     display: inline;
-    margin: 0;
-    color: pink;
+    margin: 20px;
+    color: rgb(226, 152, 152);
+    text-align: center;
 }
 
 button {
     display: inline;
     padding-left: 20px;
     margin-left: 60px;
+}
+
+form {
+    border: 2px solid rgb(223, 178, 194);
+    padding: 15px;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 15px;
 }
 
 form div {

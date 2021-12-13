@@ -17,13 +17,12 @@ const AddGift = () => {
 return (
         <form>
         <div>
-        <label>Name of Gift:   </label> 
+        <label>Name of Gift:</label> 
             <input 
                 type="text" 
                 name={name} 
                 onChange={(e) => setName(e.target.value)} 
                 placeholder="Name of Gift" />
-
         </div>
 
         <div>
@@ -33,7 +32,6 @@ return (
                 name={descrip} 
                 onChange={(e) => setDescrip(e.target.value)} placeholder="description" />
         </div>
-
 
         <div>
         <label>Link:</label>
