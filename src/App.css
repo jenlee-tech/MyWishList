@@ -15,6 +15,17 @@ h1 {
 button {
     display: inline;
     margin-left: 2em;
+    width: 3em;
+}
+
+.styleButton {
+    background-color: pink;
+    color: black;
+}
+
+.styleButton.active {
+    background-color: gray;
+    color: black;
 }
 
 form {

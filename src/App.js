@@ -6,23 +6,32 @@ import React, { useState } from 'react';
 
 
 
-
+//I want to close the form here with this function.
 function handleClose(e) {
-    console.log("I clicked the close button")
+    console.log("I clicked the close button and also to remove the addGift component")
 }
+
 
 
 function App() {
   const [datainfo, setData] = useState(data);
   console.log("this is datainfo:", datainfo); 
-  //console.log({datainfo})  
-    
+  
+  const [style, setStyle] = useState("");
+
+  //Changing the style of a button here:
+const changeButtonStyle = () => {
+  console.log("just clicked the change style function");
+  setStyle(style === "" ? "active" : "");
+}
+
+ 
 
   return ( 
     <div>
         <div>
           <h1> My Wishlist </h1> 
-          <button onClick = {handleClose}>Close</button>
+          <button className = {`styleButton ${style}`} onClick={changeButtonStyle}>Add</button>
         </div>
 
         <AddGift />
