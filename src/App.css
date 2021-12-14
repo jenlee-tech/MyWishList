@@ -14,15 +14,13 @@ h1 {
 
 button {
     display: inline;
-    padding-left: 20px;
-    margin-left: 60px;
+    margin-left: 2em;
 }
 
 form {
     border: 2px solid rgb(223, 178, 194);
     padding: 15px;
     flex-wrap: wrap;
-    width: 300px;
     margin: 15px;
 }
 
@@ -30,4 +28,5 @@ form div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 10px;
 }

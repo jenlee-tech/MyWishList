@@ -20,8 +20,11 @@ function App() {
 
   return ( 
     <div>
-        <h1> My Wishlist </h1> 
-        <button onClick = {handleClose}>Close</button>
+        <div>
+          <h1> My Wishlist </h1> 
+          <button onClick = {handleClose}>Close</button>
+        </div>
+
         <AddGift />
 
         <ul>
