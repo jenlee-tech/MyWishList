@@ -1,5 +1,5 @@
 header {
-    width: 500px;
+    width: 200px;
     border: 1px dotted black;
     display: inline-block;
     margin-bottom: 20px;
@@ -15,8 +15,8 @@ h1 {
 button {
     display: inline;
     margin-left: 2em;
-    width: 3em;
-    height: 2.5em;
+    width: 3.2em;
+    height: 3em;
 }
 
 .styleButton {
@@ -26,7 +26,7 @@ button {
 
 .styleButton.active {
     background-color: gray;
-    color: black;
+    color: white;
 }
 
 form {
@@ -34,6 +34,7 @@ form {
     padding: 15px;
     flex-wrap: wrap;
     margin: 15px;
+    width: 300px;
 }
 
 form div {

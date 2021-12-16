@@ -8,14 +8,38 @@ function handleSubmit(e) {
   }
 
 
-const AddGift = () => {
+ 
+
+const AddGift = ({onAdd}) => {
     const [name, setName] = useState('')
     const [descrip, setDescrip] = useState('')
     const [link, setLink] = useState('')
 
+const onSubmit = (e) => {
+    e.preventDefault();
+
+    //validation later
+    if(!name) {
+        alert("please put in a name for the gift");
+        return;
+    }
+
+    if (!link) {
+        alert("please put in a url for the gift")
+        return;
+    }
+
+    onAdd({name, descrip, link})
+
+    setName('');
+    setDescrip('')
+    setLink('')
+
+} 
+
 
 return (
-        <form>
+        <form onSubmit = {onSubmit}>
         <div>
         <label>Name of Gift:</label> 
             <input 
@@ -42,7 +66,7 @@ return (
                 placeholder= "Link"
                 />
         </div>
-            <input type="submit" value="Add Gift" onClick = {handleSubmit} />
+            <input type="submit" value="Save Gift" />
         </form>
     )
 }

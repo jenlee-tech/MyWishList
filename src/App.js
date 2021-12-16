@@ -11,6 +11,12 @@ function handleClose(e) {
     console.log("I clicked the close button and also to remove the addGift component")
 }
 
+//Add a gift from the form submission
+const addGiftToList = (gift) => {
+  console.log(gift)
+
+}
+
 
 
 function App() {
@@ -25,6 +31,7 @@ function App() {
   }
 
   const [buttonText, setButtonText] = useState("Close");
+  //this is to change the text on the button upon click
   const changeTextButton = () => {
     setButtonText(buttonText === "Close" ? "Add Gift" : "Close")
   }
@@ -45,7 +52,7 @@ function App() {
           </button>
         </div>
 
-        <AddGift />
+        <AddGift onAdd = {addGiftToList} />
 
         <ul>
           {datainfo.map((item) => (
