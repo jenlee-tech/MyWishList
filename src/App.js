@@ -6,10 +6,7 @@ import React, { useState } from 'react';
 
 
 
-//I want to close the form here with this function.
-function handleClose(e) {
-    console.log("I clicked the close button and also to remove the addGift component")
-}
+
 
 //Add a gift from the form submission
 const addGiftToList = (gift) => {
@@ -24,6 +21,7 @@ function App() {
   console.log("this is datainfo:", datainfo); 
   
   const [style, setStyle] = useState("");
+  
   //Changing the style of a button here:
   const changeButtonStyle = () => {
     console.log("just clicked the change style function");
