@@ -29,31 +29,34 @@ const onSubmit = (e) => {
         return;
     }
 
-    onAdd({name, descrip, link})
+    onAdd({name, descrip, link});
 
-    setName('');
-    setDescrip('')
-    setLink('')
+    setName("")
+    setDescrip("");
+    setLink("");
+    
 
 } 
 
 
+
 return (
-        <form onSubmit = {onSubmit}>
+        <form onSubmit= {onSubmit}>
         <div>
         <label>Name of Gift:</label> 
             <input 
                 type="text" 
-                name={name} 
+                value={name} 
                 onChange={(e) => setName(e.target.value)} 
                 placeholder="Name of Gift" />
+                
         </div>
 
         <div>
         <label>Description:</label>
             <input 
                 type="text" 
-                name={descrip} 
+                value={descrip} 
                 onChange={(e) => setDescrip(e.target.value)} placeholder="description" />
         </div>
 
@@ -61,12 +64,12 @@ return (
         <label>Link:</label>
             <input 
                 type="url" 
-                name={link} 
+                value={link} 
                 onChange={(e) => {setLink(e.target.value)}} 
                 placeholder= "Link"
                 />
         </div>
-            <input type="submit" value="Save Gift" />
+            <input type="submit" value="Save Gift"/>
         </form>
     )
 }
