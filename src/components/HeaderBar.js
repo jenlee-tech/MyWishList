@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function HeaderBar() {
+function HeaderBar(showList, visibleGiftList) {
   const [style, setStyle] = useState("");
   //Changing the style of a button here:
   const changeButtonStyle = () => {
@@ -13,6 +13,7 @@ function HeaderBar() {
   const changeTextButton = () => {
     setButtonText(buttonText === "Close" ? "Add Gift" : "Close");
   };
+
   return (
     <div>
       <h1> My Wishlist </h1>
@@ -21,6 +22,7 @@ function HeaderBar() {
         onClick={() => {
           changeButtonStyle();
           changeTextButton();
+          showList({ visibleGiftList: !visibleGiftList });
         }}
       >
         {buttonText}

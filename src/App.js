@@ -17,11 +17,15 @@ function App() {
     setGifts([...gifts, newGift]);
     //this combines the array and the object together.
   };
+  const [visibleGiftList, onList] = useState(true);
+  const showList = (visibleGiftList) => {
+    onList({ visibleGiftList: !visibleGiftList });
+  };
 
   return (
     <div>
-      <HeaderBar />
-      <AddGift onAdd={addGiftToList} />
+      <HeaderBar showList={showList} />
+      {visibleGiftList ? <AddGift onAdd={addGiftToList} /> : null}
       <GiftList gifts={gifts} />
     </div>
   );
