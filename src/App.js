@@ -17,14 +17,16 @@ function App() {
     setGifts([...gifts, newGift]);
     //this combines the array and the object together.
   };
+
   const [visibleGiftList, onList] = useState(true);
-  const showList = (visibleGiftList) => {
-    onList({ visibleGiftList: !visibleGiftList });
+  const showList = () => {
+    onList(!visibleGiftList); //this is the opposite of visibleGiftList, this function will be passed in props
   };
 
   return (
     <div>
       <HeaderBar showList={showList} />
+      {/**conditional rendering of this AddGift component based on the change of state caused by HeaderBar component */}
       {visibleGiftList ? <AddGift onAdd={addGiftToList} /> : null}
       <GiftList gifts={gifts} />
     </div>

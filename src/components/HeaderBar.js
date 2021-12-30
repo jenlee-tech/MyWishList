@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function HeaderBar(showList, visibleGiftList) {
+function HeaderBar(props) {
   const [style, setStyle] = useState("");
   //Changing the style of a button here:
   const changeButtonStyle = () => {
@@ -22,7 +22,7 @@ function HeaderBar(showList, visibleGiftList) {
         onClick={() => {
           changeButtonStyle();
           changeTextButton();
-          showList({ visibleGiftList: !visibleGiftList });
+          props.showList();
         }}
       >
         {buttonText}
