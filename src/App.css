@@ -29,6 +29,22 @@ button {
     color: white;
 }
 
+.deleteButton {
+    background-color: gray;
+    color: white;
+    display: inline;
+    margin: 0.5em;
+    width: 3.5em;
+    height: 3em;
+    border: 30%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
 form {
     border: 2px solid rgb(223, 178, 194);
     padding: 15px;
