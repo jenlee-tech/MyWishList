@@ -18,6 +18,14 @@ function App() {
     //this combines the array and the object together.
   };
 
+  const deleteGift = (id) => {
+    //if the id equals to any id in the gifts arrray, then we delete it and then update the state of the gifts array.  Why use the filter method?  Because it will only filter the gifts we want to see with the Logical Not operator.
+
+    console.log("deleting is working", id);
+
+    setGifts(gifts.filter((gift) => gift.id !== id));
+  };
+
   const [visibleGiftList, onList] = useState(true);
   const showList = () => {
     onList(!visibleGiftList); //this is the opposite of visibleGiftList, this function will be passed in props
@@ -28,7 +36,7 @@ function App() {
       <HeaderBar showList={showList} />
       {/**conditional rendering of this AddGift component based on the change of state caused by HeaderBar component */}
       {visibleGiftList ? <AddGift onAdd={addGiftToList} /> : null}
-      <GiftList gifts={gifts} />
+      <GiftList gifts={gifts} onDelete={deleteGift} />
     </div>
   );
 }
