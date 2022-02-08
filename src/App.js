@@ -27,6 +27,7 @@ function App() {
   };
 
   const [visibleGiftList, onList] = useState(true);
+
   const showList = () => {
     onList(!visibleGiftList); //this is the opposite of visibleGiftList, this function will be passed in props
   };

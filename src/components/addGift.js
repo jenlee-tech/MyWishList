@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 
-function handleSubmit(e) {
-  e.preventDefault();
-  console.log("The submit button got clicked!  What happen?");
-}
-
 const AddGift = ({ onAdd }) => {
   const [name, setName] = useState("");
   const [descrip, setDescrip] = useState("");
